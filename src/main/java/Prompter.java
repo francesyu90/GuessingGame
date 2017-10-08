@@ -26,25 +26,7 @@ public class Prompter {
     System.out.print("Ready? (press ENTER to start guessing)");
     String resp = in.nextLine();
     if(resp != null && resp.length() == 0) {
-      Boolean contd = true;
-      Integer count = 0;
-      do {
-        System.out.print("Guess [Note: only numbers are allowed for input]: ");
-        Integer guessedNumber = in.nextInt(); 
-        if(guessedNumber == jar.getNumber()) {
-          count++;
-          System.out.printf("You got it in %d attempt(s)", count);
-          contd = false;
-        } else if(guessedNumber > jar.getMaxNumber()) {
-          System.out.printf("Your guess must be less than %d\n", jar.getMaxNumber());
-        } else if(guessedNumber > jar.getNumber()) {
-          System.out.println("Your guess is too high");
-          count++;
-        } else if(guessedNumber < jar.getNumber()) {
-          System.out.println("Your guess is too low");
-          count++;
-        }
-      } while(contd);
+      
     }
     
     in.close();
