@@ -1,2 +1,2 @@
 # GuessingGame
-###### Description: Have you ever seen one of those contests where there is a jar filled with something like jelly beans and the goal is to guess how many are in it? If you guess correctly you win the prize, in most cases you win the jar and all the goodies inside.
+### Build a fun console-based guessing game that prompts a player to guess the correct number of items in a virtual jar filled with whatever you’d like. After the player guesses correctly, the game encourages the player to beat their score by reporting the number of attempted guesses.
